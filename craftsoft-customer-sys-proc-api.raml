@@ -148,26 +148,29 @@ title: craftsoft-customer-sys-proc-API
                 {
             "message": "You are Unauthorized"
             }
-        403:
+      403:
           body:
             application/json:
               example:
                 {
             "message": "forbidden"
           }
-        404:
-          body:
-            application/json:
-              example:
-                {
+      404:
+        body:
+          application/json:
+            example:
+              {
              "mesage": "Resource not found"
           }   
-        500:
+      500:
           body:
             application/json:
               example:
                 {
                "message": "Server error"
                 }
-                
+
   /{InvalidCustomerId}:
+    get:
+      
+
