@@ -8,6 +8,20 @@ title: craftsoft-customer-sys-proc-API
         body:
           application/json:
             example:
+              [{
+                tags : "teamB",
+	              telephoneNumber : '+16788652215',
+	              customerID : '6954453238077',
+	              id_hr : '43',
+	              zipCode : '10012',
+	              fullName : 'AdilAhmed',
+	              email : 'adil.ahmed@microsoft.com',
+	              latitude : '40.7256',
+	              longitude : '-73.9982',
+	              temp_min : '280.86',
+	              temp_max : 289.5,
+	              muleTimestamp : '2023-04-01 03:11:11'
+              },
               {
                 tags : "teamB",
 	              telephoneNumber : '+16788652215',
@@ -21,12 +35,36 @@ title: craftsoft-customer-sys-proc-API
 	              temp_min : '280.86',
 	              temp_max : 289.5,
 	              muleTimestamp : '2023-04-01 03:11:11'
-              }
-      400:
+              }]
+      401:
         body:
           application/json:
             example:
-              
+              {
+            "message": "You are Unauthorized"
+            }
+      403:
+        body:
+          application/json:
+            example:
+              {
+            "message": "forbidden"
+          }
+      404:
+        body:
+          application/json:
+            example:
+              {
+             "mesage": "Resource not found"
+          }   
+
+      500:
+        body:
+          application/json:
+            example:
+              {
+               "message": "Server error"
+          }
   /{customerId}:
 /invalidCustomer:
   /{InvalidCustomerId}:
