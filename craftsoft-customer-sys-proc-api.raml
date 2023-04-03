@@ -7,15 +7,9 @@ resourceTypes:
 traits:
   errorResponse: !include trait.raml
 /customer:
-  get:
-    responses:
-      200:
-        body:
-          application/json:
-            type: customerDataType[]
-            example:
-              
-              !include Examples/customerExample.raml
+  
+              examplereference:
+                !include Examples/customerExample.raml
     is:
       - errorResponse
       
