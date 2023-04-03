@@ -7,8 +7,9 @@ resourceTypes:
 traits:
   errorResponse: !include trait.raml
 /customer:
-  
-              examplereference:
+  type:
+    customerResourceType:
+        examplereference:
                 !include Examples/customerExample.raml
     is:
       - errorResponse
