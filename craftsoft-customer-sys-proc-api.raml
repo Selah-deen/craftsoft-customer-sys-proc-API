@@ -4,10 +4,11 @@ uses:
   lib: library.raml
 /customer:
   type: 
-    lib.customerResourceType
+    lib.customerResourceType:
       examplereference:
                 !include Examples/customerExample.raml
     is:
-      - errorResponse
+      - lib.errorResponse
+      - lib.
       
   
