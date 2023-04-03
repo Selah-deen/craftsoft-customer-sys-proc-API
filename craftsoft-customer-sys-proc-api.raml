@@ -6,11 +6,7 @@ resourceTypes:
   customerResourceType: !include ResourceType/customerResourceType.raml
 traits:
   errorResponse: !include trait.raml
-securitySchemes:
-  basic: !include securityScheme.raml
 
-securedBy:
-  - basic
 /customer:
   type:
     customerResourceType:
