@@ -1,11 +1,7 @@
 #%RAML 1.0
 title: craftsoft-customer-sys-proc-API
-types:
-  customerDataType: !include DataType/customerDataType.raml
-resourceTypes:
-  customerResourceType: !include ResourceType/customerResourceType.raml
-traits:
-  errorResponse: !include trait/traitError.raml
+uses:
+  library
 /customer:
   type:
     customerResourceType:
