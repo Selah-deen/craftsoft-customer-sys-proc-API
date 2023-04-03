@@ -3,7 +3,7 @@ title: craftsoft-customer-sys-proc-API
 types:
   customerDataType: !include DataType/customerDataType.raml
 traits:
-  errorResponse: !include 
+  errorResponse: !include trait.raml
 /customer:
   get:
     responses:
@@ -13,5 +13,7 @@ traits:
             type: customerDataType[]
             example:
               !include Examples/customerExample.raml
+    is:
+      - errorResponse
       
   
