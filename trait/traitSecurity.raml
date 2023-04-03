@@ -10,15 +10,14 @@ type:
         type: string
         required: true
 
-#%RAML 1.0 SecurityScheme
 type: OAuth 2.0
 description: Supports OAuth security
 describedBy:
   headers:
     Authorization: 
-      description: user has to send token to the server for any request
+     
       type: string
   queryParameters:
-    access token:
-      description: User has to send valid access token
+    
+      description:
       type: string
