@@ -1,2 +1,8 @@
 #%RAML 1.0 Library
 usage:
+types:
+  customerDataType: !include DataType/customerDataType.raml
+resourceTypes:
+  customerResourceType: !include ResourceType/customerResourceType.raml
+traits:
+  errorResponse: !include trait/traitError.raml
