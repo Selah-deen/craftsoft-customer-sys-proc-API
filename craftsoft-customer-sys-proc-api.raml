@@ -3,7 +3,6 @@ title: craftsoft-customer-sys-proc-API
 uses:
   lib: library.raml
 securedBy:
-  - lib.enforcement
   - lib.basic
 /customer:
   type: 
@@ -11,6 +10,7 @@ securedBy:
       examplereference:
                 !include Examples/customerExample.raml
     is:
+      - lib.enforcement
       - trait/traitError.raml
 
       
